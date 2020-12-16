@@ -1,6 +1,6 @@
 import React from "react";
 import { Fragment } from "react";
-
+import PropTypes from 'prop-types';
 function Header({titulo}) {
   return (
     <Fragment>
@@ -12,5 +12,7 @@ function Header({titulo}) {
     </Fragment>
   );
 }
-
+Header.propTypes = {
+  titulo: PropTypes.string.isRequired
+}
 export default Header;
